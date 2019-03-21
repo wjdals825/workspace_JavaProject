@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class Season {
+
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		char grade;
+		System.out.print("달을 입력하세요(1~12)");
+		char season = scanner.nextInt();
+		switch (season/3) {
+		case 4:
+			season = "겨울" ;
+			break;
+		case 3 :
+			season = "봄";
+	        break;
+		case 2 :
+			season = "여름";
+			break;
+		case 1 :
+			season = "가을";
+		}
+		System.out.println("계절은"+season+"입니다");
+		scanner.close();
+	}
+
+}
